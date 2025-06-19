@@ -87,8 +87,10 @@ jobs:
         uses: yukiarrr/ios-build-action@v1.12.0
         with:
           project-path: ./ios/App/App.xcodeproj
+          workspace-path: ./ios/App/App.xcworkspace
+          build-destination: generic/platform=iOS
           p12-base64: ${{ secrets.P12_BASE64 }}
-          certificate-password: ${{ secrets.CERT_PASSWORD }}
+          # certificate-password: ${{ secrets.CERT_PASSWORD }}
           mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
           code-signing-identity: ${{ secrets.CODE_SIGN_IDENTITY }}
           team-id: ${{ secrets.TEAM_ID }}
