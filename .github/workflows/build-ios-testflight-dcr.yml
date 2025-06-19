@@ -65,11 +65,11 @@ jobs:
         run: |
           echo "ENABLE_FILE_SYNC_PRODUCTION=true" >> $GITHUB_ENV
 
-      - name: Compile CLJS
-        run: yarn install && yarn release-app
+      # - name: Compile CLJS
+      #   run: yarn install && yarn release-app
 
-      - name: Sync static build files
-        run: rsync -avz --exclude node_modules --exclude '*.js.map' --exclude android ./static/ ./public/static/
+      # - name: Sync static build files
+      #   run: rsync -avz --exclude node_modules --exclude '*.js.map' --exclude android ./static/ ./public/static/
 
       - name: Prepare iOS build
         run: npx cap sync ios
