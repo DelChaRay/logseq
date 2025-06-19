@@ -85,6 +85,7 @@ jobs:
 
       - name: 'Build app' 
         uses: yukiarrr/ios-build-action@v1.12.0
+        working-directory: ./ios/App
         with:
           project-path: App.xcodeproj
           p12-base64: ${{ secrets.P12_BASE64 }}
@@ -97,13 +98,14 @@ jobs:
           app-store-connect-api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
           app-store-connect-api-key-issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
           app-store-connect-api-key-base64: ${{ secrets.APPSTORE_API_PRIVATE_KEY_BASE64 }}
-        working-directory: ./ios/App
+        
 
       - name: 'Upload app to TestFlight'
         uses: apple-actions/upload-testflight-build@v3
+        working-directory: ./ios/App
         with: 
           app-path: 'output.ipa' 
           issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
           api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
           api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
-        working-directory: ./ios/App
+        
