@@ -89,6 +89,7 @@ jobs:
           project-path: ./ios/App/App.xcodeproj
           workspace-path: ./ios/App/App.xcworkspace
           build-destination: generic/platform=iOS
+          scheme: Logseq
           p12-base64: ${{ secrets.P12_BASE64 }}
           # certificate-password: ${{ secrets.CERT_PASSWORD }}
           mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
