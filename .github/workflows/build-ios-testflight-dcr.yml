@@ -71,8 +71,8 @@ jobs:
       # - name: Sync static build files
       #   run: rsync -avz --exclude node_modules --exclude '*.js.map' --exclude android ./static/ ./public/static/
 
-      - name: Prepare iOS build
-        run: npx cap sync ios
+      # - name: Prepare iOS build
+      #   run: npx cap sync ios
 
       - name: List iOS build targets
         run: xcodebuild -list -workspace App.xcworkspace
