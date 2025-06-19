@@ -90,9 +90,11 @@ jobs:
           workspace-path: ./ios/App/App.xcworkspace
           build-destination: generic/platform=iOS
           scheme: Logseq
-          p12-base64: ${{ secrets.P12_BASE64 }}
+          p12-cer-base64: ${{ secrets.P12_BASE64 }}
+          p12-key-base64: ${{ secrets.P12_KEY_BASE64 }}
           mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
           code-signing-identity: ${{ secrets.CODE_SIGN_IDENTITY }}
+          certificate-password: ${{ sercrets.CERT_PASSWORD }}
           team-id: ${{ secrets.TEAM_ID }}
           increment-build-number: testflight
           bundle-identifier: com.dcr.logseq
