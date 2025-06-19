@@ -1,14 +1,11 @@
 # This workflow tries to build iOS app if any changes detected on the iOS source tree,
 # ensuring at least it builds.
 
-name: testflight-iOS
+name: Testflight-iOS
 
 on:
   push:
-    branches: [master]
-    paths:
-      - 'ios/App'
-      - package.json
+    branches: [feat/capacitor-new]
   pull_request:
     branches: [master]
     paths:
