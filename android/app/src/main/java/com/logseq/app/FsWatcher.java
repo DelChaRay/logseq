@@ -1,4 +1,4 @@
-package com.logseq.app;
+package com.dcr.app;
 
 import android.system.ErrnoException;
 import android.system.Os;

@@ -4,10 +4,10 @@ apply from: 'capacitor.build.gradle'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace "com.logseq.app"
+    namespace "com.dcr.app"
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.logseq.app"
+        applicationId "com.dcr.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 87

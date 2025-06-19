@@ -1,4 +1,4 @@
-package com.logseq.app
+package com.dcr.app
 
 import android.app.AlertDialog
 import android.app.DatePickerDialog

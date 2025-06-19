@@ -1,4 +1,4 @@
-package com.logseq.app;
+package com.dcr.app;
 
 import android.annotation.TargetApi;
 import android.content.ContentUris;

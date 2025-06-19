@@ -16,7 +16,7 @@ class ShareViewController: UIViewController {
     private var sharedData: SharedData = SharedData.init(resources: [])
 
     var groupContainerUrl: URL? {
-        return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.logseq.logseq")
+        return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.dcr.logseq")
     }
 
     override public func viewDidAppear(_ animated: Bool) {

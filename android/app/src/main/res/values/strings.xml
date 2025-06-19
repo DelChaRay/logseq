@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">Logseq</string>
     <string name="title_activity_main">Logseq</string>
-    <string name="package_name">com.logseq.app</string>
-    <string name="custom_url_scheme">com.logseq.app</string>
+    <string name="package_name">com.dcr.app</string>
+    <string name="custom_url_scheme">com.dcr.app</string>
 </resources>
