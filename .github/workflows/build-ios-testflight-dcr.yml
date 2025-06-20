@@ -103,12 +103,13 @@ jobs:
           app-store-connect-api-key-issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
           app-store-connect-api-key-base64: ${{ secrets.APPSTORE_API_PRIVATE_KEY_BASE64 }}
           export-options: ./ios/App/App/exportOptions.plist
+          output-path: ./ios/App/logseq.ipa
         
 
       - name: 'Upload app to TestFlight'
         uses: apple-actions/upload-testflight-build@v3
         with: 
-          app-path: './ios/App/output.ipa' 
+          app-path: './ios/App/logseq.ipa' 
           issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
           api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
           api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
