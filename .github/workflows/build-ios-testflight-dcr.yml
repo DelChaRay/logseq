@@ -104,7 +104,7 @@ jobs:
           app-store-connect-api-key-base64: ${{ secrets.APPSTORE_API_PRIVATE_KEY_BASE64 }}
           export-options: ./ios/App/App/exportOptions.plist
           output-path: ./ios/App/logseq.ipa
-          build-sdk: "iOS 18.5"
+          build-sdk: "iOS 18"
         
 
       - name: 'Upload app to TestFlight'
