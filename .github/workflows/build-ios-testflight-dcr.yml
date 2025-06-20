@@ -91,7 +91,9 @@ jobs:
           build-destination: generic/platform=iOS
           scheme: Logseq
           p12-base64: ${{ secrets.P12_BASE64 }}
-          mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
+          mobileprovision-base64: |
+            ${{ secrets.MOBILEPROVISION_BASE64 }}
+            ${{ secrets.SVC_PROVISION_BASE64 }}
           code-signing-identity: ${{ secrets.CODE_SIGN_IDENTITY }}
           certificate-password: ${{ secrets.CERT_PASSWORD }}
           team-id: ${{ secrets.TEAM_ID }}
@@ -100,6 +102,7 @@ jobs:
           app-store-connect-api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
           app-store-connect-api-key-issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
           app-store-connect-api-key-base64: ${{ secrets.APPSTORE_API_PRIVATE_KEY_BASE64 }}
+          export-options: ./ios/App/App/exportOptions.plist
         
 
       - name: 'Upload app to TestFlight'
