@@ -1,4 +1,4 @@
-git_url("https://github.com/logseq/certificates.git")
+git_url("https://github.com/DelChaRay/logseq_certs.git")
 
 storage_mode("git")
 
