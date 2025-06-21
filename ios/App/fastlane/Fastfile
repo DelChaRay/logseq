@@ -27,7 +27,7 @@ platform :ios do
       is_key_content_base64: ENV["APP_STORE_CONNECT_API_KEY_IS_KEY_CONTENT_BASE64"]
     )
 
-    sync_code_signing(type: "appstore", readonly: true)
+    sync_code_signing(type: "appstore", readonly: false)
 
     build_number = increment_build_number(
       xcodeproj: "App.xcodeproj",
