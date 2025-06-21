@@ -3,6 +3,8 @@
 name: Build-iOS
 
 on:
+  push:
+    branches: [feat/capacitor-new]
   workflow_dispatch:
     inputs:
       git-ref:
