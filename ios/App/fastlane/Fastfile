@@ -34,8 +34,8 @@ platform :ios do
       app_identifier: "com.dcr3.logseq",
       app_name: "Logseq DCR3",
       language: "English",
-      app_version: '2.0',
-      sku: 'com.dcr3.logseq.main'
+      app_version: "2.0",
+      sku: "com.dcr3.logseq.main",
       enable_services: {
         app_group: "on",
         icloud: "xcode6_compatible",
