@@ -1,4 +1,4 @@
-app_identifier("com.dcr.logseq") # The bundle identifier of your app
+app_identifier("com.dcr2.logseq") # The bundle identifier of your app
 apple_id(ENV["APPLE_ID"]) # Your Apple Developer Portal username
 
 # itc_team_id("123783177") # App Store Connect Team ID

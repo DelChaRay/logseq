@@ -1,4 +1,4 @@
-package com.dcr.app;
+package com.dcr2.app;
 
 import android.annotation.TargetApi;
 import android.content.ContentUris;

@@ -1,4 +1,4 @@
-package com.dcr.app
+package com.dcr2.app
 
 import android.app.AlertDialog
 import android.app.DatePickerDialog

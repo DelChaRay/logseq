@@ -6,7 +6,7 @@ module.exports = {
     name: 'Logseq',
     icon: './icons/logseq_big_sur.icns',
     buildVersion: "87",
-    appBundleId: "com.dcr.logseq",
+    appBundleId: "com.dcr2.logseq",
     protocols: [
       {
         "protocol": "logseq",
@@ -47,7 +47,7 @@ module.exports = {
         icon: path.join(__dirname, './icons/logseq.ico'),
         language: 1033,
         manufacturer: 'Logseq',
-        appUserModelId: 'com.dcr.logseq',
+        appUserModelId: 'com.dcr2.logseq',
         upgradeCode: "3778eb84-a0ce-4109-9120-5d4315e0d7de",
         ui: {
           enabled: false,

@@ -10,9 +10,9 @@
   <string>7W5U6M68WN</string>
   <key>provisioningProfiles</key>
   <dict>
-    <key>com.dcr.logseq</key>
+    <key>com.dcr2.logseq</key>
     <string>logseq dcr</string>
-    <key>com.dcr.logseq.ShareViewController</key>
+    <key>com.dcr2.logseq.ShareViewController</key>
     <string>logseq dcr svc</string>
   </dict>
   <key>compileBitcode</key>
