@@ -40,7 +40,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>CFBundleURLName</key>
-			<string>com.dcr3.logseq</string>
+			<string>com.dcr2.logseq</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>logseq</string>
@@ -75,7 +75,7 @@
 	<string>We will access your album when you choose a photo, and embed it in your note.</string>
 	<key>NSUbiquitousContainers</key>
 	<dict>
-		<key>iCloud.com.dcr3.logseq</key>
+		<key>iCloud.com.dcr2.logseq</key>
 		<dict>
 			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
 			<true/>

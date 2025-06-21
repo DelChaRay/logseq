@@ -1,4 +1,4 @@
-package com.dcr3.app;
+package com.dcr2.app;
 
 import android.content.ContentResolver;
 import android.content.Context;
