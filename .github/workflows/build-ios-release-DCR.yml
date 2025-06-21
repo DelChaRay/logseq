@@ -1,8 +1,10 @@
 # This workflow build iOS App as a .ipa file and upload it to TestFlight.
 
-name: Build-iOS
+name: Build-iOS-DCR
 
 on:
+  push:
+    branches: [feat/capacitor-new]
   workflow_dispatch:
     inputs:
       git-ref:
