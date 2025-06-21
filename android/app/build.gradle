@@ -4,10 +4,10 @@ apply from: 'capacitor.build.gradle'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace "com.dcr2.app"
+    namespace "com.dcr3.app"
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.dcr2.app"
+        applicationId "com.dcr3.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 87

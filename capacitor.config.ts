@@ -4,7 +4,7 @@ import * as fs from 'fs'
 const version = fs.readFileSync('static/package.json', 'utf8').match(/"version": "(.*?)"/)?.at(1) ?? '0.0.0'
 
 const config: CapacitorConfig = {
-  appId: 'com.dcr2.app',
+  appId: 'com.dcr3.app',
   appName: 'Logseq',
   webDir: 'static/capacitor',
   loggingBehavior: 'debug',
